@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+}
+
+h2 {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+p {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #f1f3ff;
+}
+
+.btn-success {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 10px;
+
+  /* Primary/LimeGreen/04 */
+
+  background: #5cb85f;
+  border-radius: 2px;
+
+  /* Inside auto layout */
+  border: none;
+
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+}
+
+#page-1 {
+  padding-bottom: 223px;
+  padding-top: 32px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  background-color: #f1f3ff;
+  /* add car.svg bottom right */
+  background-image: url("./imgs/car.svg") !important;
+  /* change image size */
+  background-size: 344.22px 199px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+#page-2 img {
+  width: 252px;
+  height: 228px;
+  padding-top: 60px 15px 0px 15px;
+}
+
+/* replace old dot on ul to checkmark.svg */
+.checkmark-list {
+  list-style: none;
+  padding-left: 0;
+}
+.checkmark-list li {
+  /* list-style: none; */
+  padding-left: 40px;
+  background: url("imgs/checkmark.svg") no-repeat left top;
+  /* border: 2px solid red; */
+  margin-bottom: 18px;
+}
+
+#page-2 {
+  padding: 30px 10px;
+}
+
+.card {
+  margin-bottom: 20px;
+  width: 326px;
+  height: 176px;
+  padding: 15px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.card img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 5px;
+}
+
+.owl-carousel .item {
+  background: #f1f3ff;
+  width: 308px;
+  height: 372px;
+
+  margin-left: 32px;
+  margin-right: 32px;
+
+  padding: 20px;
+}
+
+.owl-carousel .left img {
+  width: 80px;
+  height: 80px;
+  margin-left: 46px;
+  margin-right: 46px;
+}
+
+.owl-carousel .right img {
+  margin-bottom: 10px;
+  width: 80px;
+  height: 16px;
+}
+
+.reviewer {
+  font-weight: bold !important;
+}
+
+.reviews-button img {
+  margin: 20px;
+}
+
+#page-4 {
+  margin-bottom: 71px;
+  margin-top: 40px;
+
+}
+
+#page-5 {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+#page-5 > div {
+  max-width: 1168px;
+  background-color: darkblue;
+  min-height: 326px;
+  border-radius: 13px;
+  padding: 20px 64px;
+}
+
+#page-5 > div > div {
+  max-width: 613px;
+  background-color: darkblue;
+}
+
+#page-6 {
+  margin-top: 60px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#page-6 h2,
+#page-6 p {
+  text-align: center;
+}
+
+.accordion-item {
+  margin-bottom: 16px;
+  border-radius: 4px !important;
+  border: 1px solid #d4d4d4 !important;
+}
+
+#page-7 a {
+  /* font-weight: ; */
+  /* remove decoration */
+  color: black;
+  text-decoration: none;
+}
+
+@media (min-width: 576px) {
+  nav,
+  #page-1 {
+    padding-left: 80px !important;
+  }
+
+  nav {
+    padding-right: 80px !important;
+  }
+
+  #page-1 {
+    background-size: calc(344.22px * 1.5) calc(199px * 1.5);
+  }
+
+  #page-3 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  nav,
+  #page-1 {
+    padding-left: 136px !important;
+  }
+
+  nav {
+    padding-right: 136px !important;
+  }
+
+  #page-6 {
+    margin-top: 104px;
+    padding-left: 136px;
+    padding-right: 136px;
+  }
+
+  #page-6 h2,
+  #page-6 p {
+    text-align: left;
+  }
+
+  #page-1 {
+    background-size: calc(344.22px * 2) calc(199px * 2);
+    padding-top: 118px;
+    padding-bottom: 80px;
+  }
+
+  nav li {
+    margin-right: 25px;
+  }
+  /*  remove margin right last child */
+  nav li:last-child {
+    margin-right: 0;
+  }
+
+  #page-2 img {
+    width: 1027px;
+    height: 428px;
+  }
+
+  #page-2 {
+    padding-top: 104px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .card {
+    width: 268px;
+  }
+
+  #page-3 {
+    padding-left: 136px;
+    padding-right: 136px;
+  }
+
+  .owl-carousel .item {
+    background: #f1f3ff;
+    width: 619px;
+    height: 270px;
+
+    margin-left: 32px;
+    margin-right: 32px;
+
+    padding: 20px;
+  }
+
+  .owl-carousel .left img {
+    width: 80px;
+    height: 80px;
+    margin-left: 46px;
+    margin-right: 46px;
+  }
+
+  .owl-carousel .right img {
+    margin-bottom: 10px;
+  }
+
+  .owl-carousel .right {
+    margin-right: 32px;
+  }
+}
