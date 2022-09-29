@@ -1,0 +1,1 @@
+## Only designed for w=1440 and w=360
